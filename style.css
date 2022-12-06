@@ -7,10 +7,8 @@ body {
   background-color: #2d2d2d;
   color: rgb(156, 156, 156);
   margin: 0 auto;
-
   font-family: Hack, monospace;
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
