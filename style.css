@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d2d2d;
+  color: rgb(156, 156, 156);
+  margin: 0 auto;
+
+  font-family: Hack, monospace;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar.navbar-light {
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  z-index: 11;
+}
+.right-side,
+.left-side {
+  list-style-type: none;
+  margin: 0;
+  margin-inline: 10%;
+  padding: 0;
+}
+.right-side li,
+.left-side li {
+  display: inline-block;
+  text-align: center;
+}
+.right-side li a,
+.left-side li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: rgb(115, 115, 115);
+  padding: 20px 50px;
+  font-weight: bold;
+}
+/* apply hover */
+.right-side li a:hover,
+.left-side li a:hover {
+  background-color: rgb(187, 187, 187);
+}
+.flexbox-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: center;
+  transition: all 0.5s;
+}
+.flexbox-item {
+  width: 500px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+  border: 2px solid rgb(219, 17, 17);
+  border-radius: 20px;
+  height: 15%;
+  max-width: 50%;
+  color: rgb(219, 17, 17);
+  transition: all 0.5s;
+}
+.contact:hover {
+  transform: scale(1.2);
+}
+.flexboxy-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.flexboxy-item {
+  border: 1px solid white;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.8s;
+}
+
+@media only screen and (max-width: 1400px) {
+  .right-side,
+  .left-side {
+    list-style-type: none;
+    margin: 0;
+    margin-inline: 0px;
+    padding: 0;
+  }
+  .right-side li,
+  .left-side li {
+    display: inline-block;
+    text-align: center;
+  }
+  .right-side li a,
+  .left-side li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(115, 115, 115);
+    padding: 20px 50px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1016px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .centerofleft {
+    padding: auto;
+    margin: auto;
+  }
+  .contact {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navbar.navbar-light {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .right-side,
+  .left-side {
+    width: 100%;
+  }
+  .right-side li,
+  .left-side li {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+  }
+  .right-side li a,
+  .left-side li a {
+    width: 100%;
+    padding: 8px;
+  }
+  .flexbox-item.flexbox-item-1 {
+    margin-top: 240px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .flexbox-item.flexbox-item-2 {
+    margin-block: 20px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .flexbox-container {
+    margin: 0;
+  }
+  .centerofleft {
+    margin: auto;
+    padding: auto;
+  }
+  h1 {
+    height: 100%;
+  }
+  .about-me {
+    height: 500px;
+    overflow: hidden;
+  }
+}
+
+.flexboxy-container {
+  margin: auto;
+  transition: all 0.5s;
+}
+.flexboxy-item:hover {
+  transform: scale(1.1);
+}
+.flexboxy-heading {
+  width: 100%;
+  padding-left: 100px;
+  padding-block: 10px;
+}
+.about-me-text {
+  text-align: justify;
+  padding-inline: 50px;
+}
+.flexboxy-item-image {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 318px;
+  width: 400px;
+}
+.flexboxy-item-footer {
+  display: flex;
+  width: 400px;
+  height: 80px;
+}
+.flexboxy-item-footer h3 {
+  margin: auto;
+}
+.flexboxy-item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none; /* No underlines on the link */
+  z-index: 10; /* Places the link above everything else in the div */
+  background-color: #fff; /* Fix to make div clickable in IE */
+  opacity: 0; /* Fix to make div clickable in IE */
+  filter: alpha(opacity=2); /* Fix to make div clickable in IE */
+}
+
+.flexboxy-item-image.local_crud {
+  background-image: url("./local_crud/screen.jpg");
+}
+.flexboxy-item-image.drum_kit {
+  background-image: url("./01_drum_kit/screen.jpg");
+}
+.flexboxy-item-image.dice_game {
+  background-image: url("./00_dice_game/screen.jpg");
+}
+.flexboxy-item-image.clock {
+  background-image: url("./02_clock/screen.jpg");
+}
+.flexboxy-item-image.flex_galery {
+  background-image: url("./03_flex_galery/screen.jpg");
+}
+.flexboxy-item-image.type_ahead {
+  background-image: url("./04_type_ahead/screen.jpg");
+}
+.flexboxy-item-image.canvas_fun {
+  background-image: url("./05_canvas_fun/screen.jpg");
+}
+.flexboxy-item-image.localstorage {
+  background-image: url("./06_localstorage/screen.jpg");
+}
+.flexboxy-item-image.speech_detection {
+  background-image: url("./07_speech_detection/screen.jfif");
+}
+.flexboxy-item-image.speech_synthesis {
+  background-image: url("./08_speech_synthesis/screen.jpg");
+}
+.flexboxy-item-image.countdown_timer {
+  background-image: url("./09_countdown_timer/screen.jpg");
+}
+.flexboxy-item-image.whack_mole {
+  background-image: url("./10_whack_mole/screen.jpg");
+}
+.flexboxy-item-image.guess_number {
+  background-image: url("./11_guess_number/screen.jpg");
+}
+.ul-item {
+  transition: all 0.5s;
+}
+.ul-item:hover {
+  transform: scale(1.2);
+}
